@@ -34,19 +34,15 @@
                         <div class="album-info">
                             <h4 class="title">
                                 <?php echo $album['title']; ?>
-                                <!-- {{objectAlbum.title}} -->
                             </h4>
                             <div class="author">
                                 <?php echo $album['author']; ?>
-                                <!-- {{objectAlbum.author}} -->
                             </div>
                             <div class="genre">
                                 <?php echo $album['genre']; ?>
-                                <!-- {{objectAlbum.genre}} -->
                             </div>
                             <div class="year">
                                 <?php echo $album['year']; ?>
-                                <!-- {{objectAlbum.year}}   -->
                             </div>
                         </div>
                     </li>
