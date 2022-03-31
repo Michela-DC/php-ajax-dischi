@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <title>Disci Milestone 2</title>
+    <title>Dischi Milestone 2</title>
 </head>
 <body>
    <div id="app">
@@ -24,31 +24,143 @@
 
     <main>
         <div class="main-container">
-            <ul class="cards-container">
 
-                <li class="card-wrapper" v-for="album in albums">
-                    <figure class="poster">
-                        <img class="poster-img" :src="album.poster" alt="">
-                    </figure>
+            <div class="all-albums">
+                <h3 class="album-genre">Albums</h3>
+
+                <ul class="cards-container">
+                    <li class="card-wrapper" v-for="album in albums">
+                        <figure class="poster">
+                            <img class="poster-img" :src="album.poster" alt="">
+                        </figure>
+                
+                        <div class="album-info">
+                            <h4 class="title">
+                                {{album.title}}
+                            </h4>
+                            <div class="author">
+                                {{album.author}}
+                            </div>
+                            <div class="genre">
+                                {{album.genre}}
+                            </div>
+                            <div class="year">
+                                {{album.year}}  
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="metal genre-container">
+                <h3 class="album-genre">Metal</h3>
+
+                <ul class="cards-container">
+                    <li class="card-wrapper" v-for="album in metal">
+                        <figure class="poster">
+                            <img class="poster-img" :src="album.poster" alt="">
+                        </figure>
+                
+                        <div class="album-info">
+                            <h4 class="title">
+                                {{album.title}}
+                            </h4>
+                            <div class="author">
+                                {{album.author}}
+                            </div>
+                            <div class="genre">
+                                {{album.genre}}
+                            </div>
+                            <div class="year">
+                                {{album.year}}  
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rock genre-container">
+                <h3 class="album-genre">Rock</h3>
+    
+                <ul class="cards-container">
+                    <li class="card-wrapper" v-for="album in rock">
+                        <figure class="poster">
+                            <img class="poster-img" :src="album.poster" alt="">
+                        </figure>
+                
+                        <div class="album-info">
+                            <h4 class="title">
+                                {{album.title}}
+                            </h4>
+                            <div class="author">
+                                {{album.author}}
+                            </div>
+                            <div class="genre">
+                                {{album.genre}}
+                            </div>
+                            <div class="year">
+                                {{album.year}}  
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pop genre-container">
+                <h3 class="album-genre">Pop</h3>
+    
+                <ul class="cards-container">
+                    <li class="card-wrapper" v-for="album in pop">
+                        <figure class="poster">
+                            <img class="poster-img" :src="album.poster" alt="">
+                        </figure>
+                
+                        <div class="album-info">
+                            <h4 class="title">
+                                {{album.title}}
+                            </h4>
+                            <div class="author">
+                                {{album.author}}
+                            </div>
+                            <div class="genre">
+                                {{album.genre}}
+                            </div>
+                            <div class="year">
+                                {{album.year}}  
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="jazz genre-container">
+                <h3 class="album-genre">Jazz</h3>
+    
+                <ul class="cards-container">
+                    <li class="card-wrapper" v-for="album in jazz">
+                        <figure class="poster">
+                            <img class="poster-img" :src="album.poster" alt="">
+                        </figure>
+                
+                        <div class="album-info">
+                            <h4 class="title">
+                                {{album.title}}
+                            </h4>
+                            <div class="author">
+                                {{album.author}}
+                            </div>
+                            <div class="genre">
+                                {{album.genre}}
+                            </div>
+                            <div class="year">
+                                {{album.year}}  
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             
-                    <div class="album-info">
-                        <h4 class="title">
-                            {{album.title}}
-                        </h4>
-                        <div class="author">
-                            {{album.author}}
-                        </div>
-                        <div class="genre">
-                            {{album.genre}}
-                        </div>
-                        <div class="year">
-                            {{album.year}}  
-                        </div>
-                    </div>
-                </li>
-            
-            </ul>
-        </div>
+        </div> <!-- fine main-container -->
     </main>
 
    </div> 
