@@ -12,23 +12,17 @@ const app = new Vue ({
 
     methods: {
         fetchData() {
-            axios.get('./server.php').then (res => {
+            axios.get('./db.php').then (res => {
                 console.log(res.data);
 
                 this.albums = res.data;
                 console.log(this.albums);
-            });
-        },
-
-        filteredAlbums () {
-            axios.get('./server.php').then (res => {
 
                 this.getGenre(res.data, 'metal',this.metal);
                 this.getGenre(res.data, 'rock',this.rock);
                 this.getGenre(res.data, 'pop',this.pop);
                 this.getGenre(res.data, 'jazz',this.jazz);
-                
-            }); 
+            });
         },
 
         getGenre (response, genre, array) { //funzione per filtrare la risposta dall'axios

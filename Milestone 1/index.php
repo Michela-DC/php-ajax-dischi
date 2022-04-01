@@ -1,3 +1,7 @@
+<?php
+    include __DIR__ . '/partials/array_discs.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +25,8 @@
         <div class="main-container">
 
             <ul class="cards-container">
-                <?php
-                include __DIR__ . '/partials/array_discs.php';
-    
-                foreach($discs as $disc => $album){
+                <?php    
+                foreach($discs as $disc => $album):
                     ?>
                     <li class="card-wrapper">
                         <figure class="poster">
@@ -47,7 +49,7 @@
                         </div>
                     </li>
                     <?php
-                }
+                endforeach;
                 ?>
             </ul>
         </div>
